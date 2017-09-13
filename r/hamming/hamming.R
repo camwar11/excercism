@@ -5,11 +5,5 @@ hamming <- function(strand1, strand2) {
     stop("Invalid length");
   }
   
-  var.distance = 0;
-  for(equal in charToRaw(strand1) == charToRaw(strand2)) {
-    if(!equal)
-      var.distance = var.distance + 1;
-  }
-  
-  var.distance;
+  sum(charToRaw(strand1) != charToRaw(strand2));
 }
