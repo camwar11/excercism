@@ -1,4 +1,4 @@
-source("./leap.R")
+source("./leap/leap.R")
 library(testthat)
 
 test_that("year not divisible by 4: common year", {
